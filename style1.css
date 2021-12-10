@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+ }
+ 
+ .Backgroundimage{
+    width: 100%;
+    height: 100vh; /*viewport height*/                      
+    background-size: cover; /*grootte achtergrond foto*/
+    background-position: center;
+    background-image: url(Images/RijksmuseumSchilderij2.0.jfif);
+    position: absolute;
+}
+
+.FrontText{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: orangered;
+    transform: translateY(-50%);
+    top: 50%;
+}
