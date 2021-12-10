@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+.Titel{
+    color: cyan;
+}
+
+.Days{
+    color: yellow;
+}
+
+.Time{
+    color: gold;
+}
+
+h2{
+    color: green;
+}
+
+.Money{
+    color: crimson;
+}
