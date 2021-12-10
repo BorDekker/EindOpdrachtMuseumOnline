@@ -11,13 +11,8 @@
     height: 100vh; /*viewport height*/                      
     background-size: cover; /*grootte achtergrond foto*/
     background-position: center;
-<<<<<<< HEAD
-    background-image: url(rijksmuseumfoto.png);
-    position: relative;
-=======
     background-image: url(Images/rijksmuseumfoto.png);
     position: absolute;
->>>>>>> a403a260df3f07ce82948b8db9e3041060be0433
 }
 
 
