@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+ }
+
+
+
+
+
+.achtergrondfoto{
+    width: 100%;
+    height: 100vh; /*viewport height*/                      
+    background-size: cover; /*grootte achtergrond foto*/
+    background-position: center;
+    background-image: url(rijksmuseumfoto.png);
+    position: absolute;
+}
+
+
+.navigatie{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+}
+
+/*indeling navigatie*/
+.navigatie ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+/*navigatie tekst eigenschappen*/
+.navigatie ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+/*navigatie balkjes*/
+.navigatie ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(221, 89, 89);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+/*animatie van de balkjes*/
+.navigatie ul li:hover::after{
+    width: 100%;
+
+}
+
+
+.fronttext{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+
+
+
+
+
+
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/*knop animatie*/
+button:hover{
+    background-color: rgb(255, 95, 95);
+    transition: 1s;
+}
+
+
+/*mobiele opties*/
+@media(max-width: 700px){
+    .fronttext{
+        font-size: 20px;
+    }
+    .navigatie ul li{
+        display: block;
+    }
+    .navigatie{
+        position: absolute;
+        background: rgb(255, 103, 103);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+
+
+
+
+
+.middelpagina{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
