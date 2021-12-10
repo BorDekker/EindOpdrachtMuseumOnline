@@ -12,7 +12,7 @@
     background-size: cover; /*grootte achtergrond foto*/
     background-position: center;
     background-image: url(Images/rijksmuseumfoto.png);
-    position: absolute;
+    position: relative;
 }
 
 
