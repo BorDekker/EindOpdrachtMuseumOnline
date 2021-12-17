@@ -151,7 +151,7 @@ p{
     justify-content: space-between;
 
 }
-.rij-horizontaal{
+.tentoonstelling1{
     flex-basis: 31%;
     background: transparent;
     border-radius: 10px;
@@ -171,7 +171,49 @@ p{
     transition: 0.2s transform;
 }
 
-.rij-horizontaal:hover{
+
+.tentoonstelling2{
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-image: url(Images/hogeluchten.webp);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding-top: 245px;
+    cursor: pointer;
+    transition: 0.2s transform;
+}
+
+
+.tentoonstelling3{
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-image: url(Images/cuypers\ boekenkast.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding-top: 245px;
+    cursor: pointer;
+    transition: 0.2s transform;
+}
+
+.tentoonstelling1:hover, .tentoonstelling2:hover, .tentoonstelling3:hover{
     transform: scale(1.05);
 }
 
@@ -232,6 +274,7 @@ p{
     font-weight: bold;
     font-size: 18px;
     align-items: center;
+    background: rgb(238, 82, 82);
 }
 
 .next{
@@ -241,7 +284,7 @@ p{
 }
 
 .prev:hover, .next:hover{
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(253, 98, 98, 0.445);
 }
 
 
