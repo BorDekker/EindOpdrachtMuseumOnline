@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+h1{
+    background-color: aquamarine;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.2s transform;
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.TempleGuard::after{
+    margin-top: 40px;
+    content: none;
+    display: table;
+    clear: both;
+}
