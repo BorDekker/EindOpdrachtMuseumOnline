@@ -3,33 +3,111 @@
 }
 
 body{
-    background-color: blanchedalmond;
+    background-color: springgreen;
 }
 
 h1{
-    background-color: aquamarine;
+    background-color: rgb(255, 103, 103);
+    color: springgreen;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
 
-img{
-    width: 200px;
-    padding: 5px;
-    border-radius: 5px;
-    transition: 0.2s transform;
-    box-sizing: border-box;
-    float: left;
-    width: 33.33%;
+h2{
+    color: rgb(255, 103, 103);
+    text-align: center;
 }
 
-img:hover{
+.Korting{
+    text-align: center;
+}
+
+h3{
+    color: rgb(255, 103, 103);
+}
+
+p{
+    color: springgreen;
+}
+
+.rij{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Item1{
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url(Images/TempelwachterMisshakuKongo.png);
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding-top: 245px;
+    cursor: pointer;
+    transition: 0.2s transform;
+}
+
+.Item1:hover{
     transform: scale(1.05);
 }
 
-.TempleGuard::after{
-    margin-top: 40px;
-    content: none;
-    display: table;
-    clear: both;
+.Item2{
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url(Images/TempelwachterNaraenKongo.png);
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding-top: 245px;
+    cursor: pointer;
+    transition: 0.2s transform;
+}
+
+.Item2:hover{
+    transform: scale(1.05);
+}
+
+.Item3{
+    flex-basis: 31%;
+    background: transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 20px 12px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url(Images/TheekopjeRijksmuseum.png);
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: left;
+    padding-top: 245px;
+    cursor: pointer;
+    transition: 0.2s transform;
+}
+
+.Item3:hover{
+    transform: scale(1.05);
 }

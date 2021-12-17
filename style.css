@@ -183,6 +183,19 @@ p{
     }
 }
 
+/*-------------------Openingstijden-----------------*/
+
+.Openingstijden{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.OpeningstijdenText{
+    text-align: center;
+}
+
 /*-------------------Geschiedenis-------------------*/
 
 .Geschiedenis{
