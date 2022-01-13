@@ -23,9 +23,7 @@
     justify-content: space-between;
 }
 
-.logo{
-    color: white;
-}
+
 
 /*indeling navigatie*/
 .navigatie ul li{
@@ -69,10 +67,17 @@
     color: white;
     transform: translateY(-50%);
     top: 50%;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 
-
+.logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
 
 
 
@@ -131,6 +136,7 @@ button:hover{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    font-family: sans-serif;
 }
 
 h1{
@@ -200,7 +206,7 @@ p{
     margin-bottom: 5px;
     padding: 20px 12px;
     box-sizing: border-box;
-    background-image: url(Images/cuypers\ boekenkast.jpg);
+    background-image: url(Images/xxlpapier.webp);
     background-size: cover;
     background-position: center;
     height: 40vh;
@@ -245,6 +251,7 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    font-family: sans-serif;
 }
 
 .text{
@@ -262,6 +269,7 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    font-family: sans-serif;
 }
 
 
@@ -316,6 +324,33 @@ html {
 
 
 
+.top{
+    width: 70px;
+    height: 70px;
+    background: #3d3d3d;
+    border: none;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 40px;
+    color: white;
+    position: fixed;
+    bottom:120px;
+    right:120px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top:hover{
+    background: #3d3d3d69;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+
+
 
 
 
@@ -335,6 +370,10 @@ html {
     .prev, .next{
         margin: 40px;
         top: 50%;
+    }
+    .top{
+        right: 40px;
+        bottom: 20px;
     }
 } 
 
