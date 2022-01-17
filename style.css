@@ -122,6 +122,7 @@ button:hover{
         text-align: left;
         justify-content: right;
         line-height: 50px;
+        opacity: 1.0;
         
     }
 }
@@ -143,6 +144,13 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
+
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
 
 p{
     font-size: 14px;
@@ -238,11 +246,16 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    font-family: sans-serif;
+    padding-bottom: 25px;
 }
 
 .OpeningstijdenText{
     text-align: center;
+    font-family: sans-serif;
 }
+
+
 
 /*-------------------Geschiedenis-------------------*/
 
@@ -257,6 +270,7 @@ p{
 .text{
     text-align: left;
     font-family: sans-serif;
+    width: 80vw;
 }
 
 
@@ -301,7 +315,7 @@ p{
 .next{
     right: 0;
     border-radius: 3px 0 0 3px;
-    margin-right: 22px;
+    margin-right: 0px;
 }
 
 .prev:hover, .next:hover{
@@ -315,13 +329,17 @@ img{
     text-align: left;
     transition: 0.2s transform;
     align-items: center;
-
+    width: 100%;
+    height: 100%;
 }
 
 html {
     scroll-behavior: smooth;
   }
 
+  ul{
+      list-style: none;
+  }
 
 
 .top{
@@ -349,11 +367,95 @@ html {
 }
 
 
+footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background: #222831;
+    color: white;
+}
+  
+
+footer > p{
+    width: 60vw;
+    margin: 0 auto;
+    padding-left: 80px;
+    font-family: sans-serif;
+    display: block;
+    line-height: 20px;
+}
+
+footer > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+
+
+.collectionsTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 25px;
+}
+    
+
+
+.collectionsList{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.collectionsListItem{
+    width: 450px;
+    height: 350px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border-radius: 50px;
+    
+
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+.reviewTitle{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
 
 
 
 
 
+
+.route{
+    max-width: 980px;
+    position: relative;
+    margin: auto;
+    padding-top: 50px;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-top: 200px;
+}
 
 
 
