@@ -22,7 +22,7 @@
                         <li><a href="Schilderijen.html">Schilderijen</a></li>
                         <li><a href="#geschiedenis">Geschiedenis</a></li>
                         <li><a href="Giftshop.html">Giftshop</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="engels.html">ENG</a></li>
                     </ul>
                 </nav>
@@ -101,9 +101,11 @@
 
         <!------------FOTO-SLIDER--------------->
 
+
         <div class="foto-text">
             <h2>bekijk onze foto's</h2>
         </div>
+
 
 
         <div class="container">
@@ -114,15 +116,28 @@
             <img class="mySlides" src="Images/nachtwacht-zaal.jfif" alt="Onze bekende nachtwachtzaal">
 
 
+   
+
+
 
             <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
             <a class="next" onclick="plusDivs(+1)">&#10095;</a>
         </div>
         <br>
 
-        <div class="route">
-            <h2>PLACEHOLDER</h2>
-            <p>hier komt de interactieve route</p>
+            <img id="myImage" src="img/0.jpg" alt="foto sb">
+            <div id="myInteraction">
+                <div id="myTitle">Hier komt de titel</div>
+                <input type="text" id="myInput" autocomplete="off">
+                <input type="button" value="voer in" onclick="getInput()">
+                <h3>kies welke richting je op wilt</h3>
+                <nav>
+                    <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
+                    <button id="knopWest" onclick="goDirection('west')">West</button><button id="knopOost" onclick="goDirection('oost')">Oost</button>
+                    <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+                </nav>
+                <img src="Images/plattegrond.png" id="mapImage">
+            </div>
         </div>
 
     </article>
@@ -132,7 +147,7 @@
         <ul class="collectionsList">
             <li class="collectionsListItem">
                 <h2 class="reviewTitle">Prepare to do a lot of walking,</h2> 
-                <p>there are elevator areas , bathroom and lockers to put your stuff away. 
+                <p class="collectionsListP">there are elevator areas , bathroom and lockers to put your stuff away. 
                     Enjoy walking through history and the staff is friendly as well. ★★★★★
                 </p>
             </li>
@@ -141,6 +156,12 @@
                
             </li>
             <li class="collectionsListItem">
+                <h2 class="reviewTitle">Zeer mooi en groot gebouw</h2>
+                <p class="collectionsListP">Het museum is erg groot en is voorzien van meerdere grote hallen
+                    Er is ook een mooie eregallerij met de meest belangrijke kunsten
+                    Ik raad dit museum aan iedere geïnteresseerde aan.
+                </p>
+               
               
             </li>
             <li class="collectionsListItem">
@@ -154,7 +175,7 @@
     <script src="script.js"></script>
     <section>
         <footer>
-            <p>Rijksmuseum Amsterdam<br>
+            <p id="contact">Rijksmuseum Amsterdam<br>
                 Postbus 74888<br>
                 1070 DN Amsterdam<br>
                 E-mail: info@rijksmuseum.nl<br>

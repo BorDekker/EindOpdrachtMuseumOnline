@@ -103,6 +103,8 @@ button:hover{
 }
 
 
+
+
 /*mobiele opties*/
 @media(max-width: 700px){
     .fronttext{
@@ -123,7 +125,6 @@ button:hover{
         justify-content: right;
         line-height: 50px;
         opacity: 1.0;
-        
     }
 }
 
@@ -399,6 +400,10 @@ footer > img{
     padding-top: 80px;
     padding-bottom: 25px;
 }
+
+.collectionsListP{
+    font-size: 20px;
+}
     
 
 
@@ -423,6 +428,13 @@ footer > img{
 
 }
 
+.collectionsListItem:hover{
+    border: 5px solid rgb(221, 89, 89);
+    transition: 0.25s;
+}
+
+
+
 h2{
     font-family: sans-serif;
 }
@@ -433,7 +445,7 @@ h2{
     justify-content: center;
     align-items: center;
     padding-left: 40px;
-    padding-top: 40px;
+    padding-top: 75px;
     padding-right: 40px;
 }
 
@@ -484,6 +496,73 @@ h2{
 
 
 
+#container{
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px gray;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+
+
+#myInteraction{
+    padding: 10px;
+}
+
+#mapImage{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    margin-right: 400px;
+}
+
+nav button{
+    background-color: rgb(92, 177, 92);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+#knopNoord, #knopZuid {
+    width: 300px;
+    cursor: pointer;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 89, 89);
+    width: 50px;
+}
+
+#knopWest, #knopOost{
+    width: 300px;
+    cursor: pointer;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(221, 89, 89);;
+    width: 50px;
+}
+
+#myImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+
+
+Input{
+    border-radius: 35px;
+}
 
