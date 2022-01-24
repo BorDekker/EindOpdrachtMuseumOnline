@@ -81,14 +81,13 @@
 
         <!------------GESCHIEDENIS--------------->
 
-        <div class="Geschiedenis">
+        <div class="Geschiedenis">                                                                                      
             <div class="text-geschiedenis">
                 <h2 id="geschiedenis">Geschiedenis</h2>
                 <div class="text">
                     <p>Ons museum dateert naar 19 November 1798 en is daarmee een van de oudste musea in Nederland.
                         Het museum is vaak verhuist naar andere plekken zo was Amsterdam niet de oorspronkelijke
-                        locaties,
-                        maar was het Den Haag. In 1906 hebben wij onze hal voor de nachwacht herbouwd. deze
+                        locaties, maar was het Den Haag. In 1906 hebben wij onze hal voor de nachwacht herbouwd. deze
                         wijziging werd gevolgt door meer nieuwe toevoegingen zoals ruimtes voor tentoonstellingen.
                         in 1996 hebben wij onze eerste grote fotografische tentoonstelling. in 2003 zijn wij een grote
                         verbouwing ondergaan die in 2012 voltooid werd. Over de jaren is het Rijksmuseum bekender
@@ -99,11 +98,17 @@
             </div>
         </div>
 
+
+        
+        
+
+        
+
         <!------------FOTO-SLIDER--------------->
 
 
         <div class="foto-text">
-            <h2>bekijk onze foto's</h2>
+            <h2>Bekijk onze foto's</h2>
         </div>
 
 
@@ -124,21 +129,21 @@
             <a class="next" onclick="plusDivs(+1)">&#10095;</a>
         </div>
         <br>
-
+        <h2 class="interactive">Bekijk Onze Interactieve Route</h2>
+        <div id="container"></div>
+        <input type="text" id="myInput" value="voer zaal nummer in" autocomplete="on">
+        <input type="button" value="voer in" id="voerIn" onclick="getInput()">
             <img id="myImage" src="img/0.jpg" alt="foto sb">
             <div id="myInteraction">
                 <div id="myTitle">Hier komt de titel</div>
-                <input type="text" id="myInput" autocomplete="off">
-                <input type="button" value="voer in" onclick="getInput()">
-                <h3>kies welke richting je op wilt</h3>
                 <nav>
-                    <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
-                    <button id="knopWest" onclick="goDirection('west')">West</button><button id="knopOost" onclick="goDirection('oost')">Oost</button>
-                    <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+                    <button id="knopNoord" onclick="goDirection('noord')">↥</button>
+                    <button id="knopWest" onclick="goDirection('west')">↤</button>
+                    <button id="knopOost" onclick="goDirection('oost')">↦</button>
+                    <button id="knopZuid" onclick="goDirection('zuid')">↧</button>
                 </nav>
-                <img src="Images/plattegrond.png" id="mapImage">
             </div>
-        </div>
+            <img src="Images/plattegrond.png" id="mapImage" alt="de plattegrond met de locaties van het rijksmuseum">
 
     </article>
 
@@ -152,7 +157,11 @@
                 </p>
             </li>
             <li class="collectionsListItem">
-                <h2 class="reviewTitle">Erg goed museum met veel objecten. duurt lang voordat je er op uitgekeken bent</h2>
+                <h2 class="reviewTitle">duurt lang voordat je er op uitgekeken bent</h2>
+                <p class="collectionsListP">Ik was enorm tevreden na het zien van de vele objecten en kunsten.
+                    Ook was Ik verbaast over de lengte van de tours. Aanrader voor elke
+                    tourist die naar bezienswaardigheden zoekt.
+                </p>
                
             </li>
             <li class="collectionsListItem">
@@ -161,10 +170,15 @@
                     Er is ook een mooie eregallerij met de meest belangrijke kunsten
                     Ik raad dit museum aan iedere geïnteresseerde aan.
                 </p>
+            <li class="collectionsListItem">
+                <h2 class="reviewTitle">geweldige diversiteit in kunsten</h2>
+                <p class="collectionsListP">Het aantal verschillende kunsten en zalen is adembenemend
+                    de zalen gaan van wandtapijten naar bibliotheken. Het museum bevat wat 
+                    voor iedereen. Dit maakt het Rijksmuseum een ware aanrader.
+                </p>
                
               
             </li>
-            <li class="collectionsListItem">
         </ul>
     </section>
 

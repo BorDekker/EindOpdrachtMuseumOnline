@@ -44,8 +44,7 @@ let current_index = 0;
 let locaties = 
 [ // array
     { //1 object
-
-        "titel":"Ingang silver bullet",
+        "titel":"voorhal",
         "image":"images/voorhal.jpg",
         "directions": {
             "noord": 1,
@@ -53,55 +52,54 @@ let locaties =
     },
     {
 
-        "titel":"gang bij docentenkamer",
-        "image":"images/gallerij1.jpg",
+        "titel":"eregallerij",
+        "image":"images/eregallerij2.jpg",
         "directions": {
             "noord": 2,
-            "west":2,
-            "oost":2,
-            "zuid":4
+            "zuid":0,
         }
     },
     {
 
-        "titel":"gang voor de trap",
-        "image":"img/2.jpg",
+        "titel":"NachtwachtZaal",
+        "image":"images/nachtwachtkamer.jpg",
         "directions":{
-            "zuid":3,
-            "oost":1,
-
+            "zuid":1,
+            "oost":3,
+            "noord":4,
+            "west":5,
         }
     },
     {
 
-        "titel":"Kleine ruimte",
-        "image":"img/3.jpg",
+        "titel":"2.15 william rex",
+        "image":"images/william-rex.jpg",
         "directions": {
-            "noord": 2
-        }
-    },
-    {
-
-        "titel":"docentenkamer",
-        "image":"img/4.jpg",
-        "directions": {
-            "noord": 1
-        }
-    },
-    {
-
-        "titel":"Gang voor c 0.90",
-        "image":"img/5.jpg",
-        "directions": {
-            "noord": 10,
+            "west": 2,
             "oost": 6,
-            "west": 1
         }
     },
     {
 
-        "titel":"gang voor toiletten",
-        "image":"img/6.jpg",
+        "titel":"Beeldengallerij",
+        "image":"images/beeldengallerij.jpg",
+        "directions": {
+            "zuid": 2,
+        }
+    },
+    {
+
+        "titel":"2.1 Willem van Oranje maniërisme",
+        "image":"images/2.1.png",
+        "directions": {
+            "oost": 2,
+            "west": 7,
+        }
+    },
+    {
+
+        "titel":"Both",
+        "image":"images/2.17.png",
         "directions": {
             "west": 5,
             "oost": 7,
@@ -110,36 +108,37 @@ let locaties =
     },
     {
 
-        "titel":"gang bij 0.93",
-        "image":"img/7.jpg",
+        "titel":"2.3 kunstkamer",
+        "image":"images/2.3.png",
         "directions": {
+            "oost": 5,
             "noord":9,
-            "zuid":8
+            "zuid":8,
         }
     },
     {
 
-        "titel":"lokaal 0.93",
-        "image":"img/8.jpg",
+        "titel":"2.4 vlaamse invloeden",
+        "image":"images/2.4.jpg",
         "directions": {
             "noord":7,
+            "zuid":10,
         }
     },
     {
 
-        "titel":"Lokaal 0.92",
-        "image":"img/9.jpg",
+        "titel":"2.2 wandtapijten",
+        "image":"images/2.2.jpg",
         "directions": {
             "zuid": 7,
-            "west": 10
         }
     },
     {
 
-        "titel":"lokaal 0.90",
-        "image":"img/10.jpg",
+        "titel":"2.5 Hugo De Groot",
+        "image":"images/2.5.jpg",
         "directions": {
-            "west": 9,
+            "noord": 8,
             "zuid": 5
         }
     },
