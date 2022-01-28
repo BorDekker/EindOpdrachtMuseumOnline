@@ -77,6 +77,12 @@
     color: white;
     text-transform: uppercase;
     font-family: sans-serif;
+    display: flex;
+}
+
+.logo > img{
+    width: 200px;
+    border-radius: 0px;
 }
 
 #myTitle{
@@ -132,16 +138,50 @@ button:hover{
 }
 
 
+.menu{
+    visibility: hidden;
+    display: none;
+    color: white;
+    font-size: 50px;
+    padding-left: 650px;
+    z-index: 9;
+}
+
+
 
 
 /*mobiele opties*/
-@media(max-width: 700px){
+@media(max-width: 800px){
     .fronttext{
         font-size: 20px;
     }
     .navigatie ul li{
         display: block;
+        justify-content: center;
+        align-items: top;
+        bottom: 150px;
+        z-index: 10;
     }
+
+
+    .navigatie ul li::after{
+        content: none;
+        height: 0px;
+        width: 0;
+        background: rgb(221, 89, 89);
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+    }
+    
+
+
+
+
+
+  
+
     .navigatie{
         display: flex;
         position: absolute;
@@ -154,7 +194,25 @@ button:hover{
         justify-content: right;
         line-height: 50px;
         opacity: 1.0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.75s all;
     }
+
+    .menu{
+        display: flex;
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        visibility: visible;
+    }
+
+    .logo{
+        visibility: hidden;
+    }
+    
+
+
 }
 
 
@@ -213,7 +271,9 @@ p{
     padding-top: 245px;
     cursor: pointer;
     transition: 0.2s transform;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 
 
@@ -238,6 +298,7 @@ p{
     padding-top: 245px;
     cursor: pointer;
     transition: 0.2s transform;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -259,17 +320,62 @@ p{
     padding-top: 245px;
     cursor: pointer;
     transition: 0.2s transform;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tentoonstelling1:hover, .tentoonstelling2:hover, .tentoonstelling3:hover{
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     
 
     .rij{
         flex-direction: column;
+    }
+
+    .tentoonstelling1{
+        flex-basis: 31%;
+        background: transparent;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        background-image: url(Images/nachtwacht1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        color: white;
+        text-align: left;
+        padding-top: 245px;
+        cursor: pointer;
+        transition: 0.2s transform;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    
+
+    .tentoonstelling2{
+        flex-basis: 31%;
+        background: transparent;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        background-image: url(Images/hogeluchten.webp);
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        color: white;
+        text-align: left;
+        padding-top: 245px;
+        cursor: pointer;
+        transition: 0.2s transform;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 
@@ -310,6 +416,7 @@ p{
 }
 
 
+
 /*-------------------FOTO-SLIDER-------------------*/
 
 * {box-sizing: border-box;}
@@ -333,6 +440,7 @@ p{
 .mySlides{
     align-items: center;
     display: none;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .prev, .next{
@@ -367,7 +475,12 @@ img{
     align-items: center;
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 500px;
 }
+
+
 
 html {
     scroll-behavior: smooth;
@@ -402,12 +515,13 @@ html {
     transition: 0.2s;
 }
 
+/*-------------------FOOTER-------------------*/
 
 footer{
     height: 250px;
     display: flex;
     align-items: center;
-    background: #222831;
+    background: #1a1818;
     color: white;
 }
   
@@ -419,27 +533,53 @@ footer > p{
     font-family: sans-serif;
     display: block;
     line-height: 20px;
+    columns: 3;
 }
 
 footer > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+    position: relative;
+    top: 60px;
+    cursor: pointer;
+}
+
+footer > img:hover{
+    opacity: 0.5;
+}
+
+
+
+.github:hover{
+    opacity: 0.5;
+}
+
+.github{
     width: 50px;
     height: 50px;
+    position: relative;
+    top: 60px;
     margin-right: 50px;
 }
 
+/*-------------------REVIEWS-------------------*/
 
 .collectionsTitle{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
 }
 
 .collectionsListP{
     font-size: 20px;
 }
+
+
+
     
 
 
@@ -465,9 +605,11 @@ footer > img{
 }
 
 .collectionsListItem:hover{
-    border: 5px solid rgb(221, 89, 89);
+    border: 4px solid rgb(221, 89, 89);
     transition: 0.25s;
 }
+
+
 
 
 
@@ -483,6 +625,7 @@ h2{
     padding-left: 40px;
     padding-top: 75px;
     padding-right: 40px;
+    font-size: 30px;
 }
 
 
@@ -496,12 +639,12 @@ h2{
 
 
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     .mySlides{
         max-width: 100%;
         height: auto;
-        padding: 40px
-
+        padding: 40px;
+        box-shadow: none;
     }
 
     .prev, .next{
@@ -511,17 +654,19 @@ h2{
     .top{
         right: 40px;
         bottom: 20px;
+        margin-bottom: 60px;
     }
 } 
 
 
 
-
+/*-------------------INTERACTIEVE-ROUTE-------------------*/
 
 
 #container{
     position: relative;
 }
+
 
 
 
@@ -533,8 +678,8 @@ h2{
 
 #mapImage{
     position: relative;
-    bottom: 320px;
-    left: 12px;
+    bottom: 323px;
+    left: 10px;
     height: 200px;
     width: 200px;
     margin-left: 1050px;
@@ -550,9 +695,7 @@ h2{
   }
 
 
-nav > button{
 
-}
 
 
 
@@ -650,25 +793,28 @@ nav > button{
     background-size: cover;
     margin-top: 200px;
     height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 
 Input{
-    border-radius: 35px;
+    background: rgba(161, 161, 161, 0.212);
+    border-radius: 10px;
 }
 
 
-@media(max-width: 700px) {
+@media screen and (max-width:800px) {
     #myImage{
         width: 100%;
         margin-left: 0px;
         height: 400px;
         padding: 40px;
+        box-shadow: none;
     }
 
     #mapImage:hover {
-        transform: scale(1.5);
+        transform: scale(2.4);
         opacity: 1; 
       }
     
@@ -677,8 +823,10 @@ Input{
         flex-wrap: wrap;
         background-size: contain;
         margin-left: 1px;
-        left: 425px;
-        bottom: 525px;
+        left: 510px;
+        bottom: 388px;
+        height: 140px;
+        width: 150px;
     }
     #knopNoord{
         bottom: 408px;
@@ -686,22 +834,40 @@ Input{
     }
     
     #knopOost{
-        bottom: 350px;
-        left: 52px;
+        bottom: 358px;
+        left: 99px;
     }
     
     #knopZuid{
-        bottom: 10px;
+        bottom: 100px;
         right: 300px;
     }
 
     #knopZuid{
-        bottom: 10px;
-        right: 300px;
+        bottom: 220px;
+        right: 255px;
     }
     #knopWest{
         right: 344px;
-        bottom: 260px;
+        bottom: 275px;
     }
+
+    #myTitle{
+        position: relative;
+        right: 200px;
+        bottom: 40px;
+    }
+
+    #myInput{
+        position: relative;
+        left: 40px;
+    }
+
+    #voerIn{
+        position: relative;
+        left: 45px;
+    }
+
     
 } 
+

@@ -10,20 +10,21 @@
 <body>
     <article id="article">
     <header>
-    <div class="achtergrondfoto">
-        <nav class="navigatie">
-            <div class="logo">
-                RIJKSMUSEUM
-            </div>
-            <ul>
-                <li><a href="Tickets.html">Tickets</a></li>
-                <li><a href="Schilderijen.html">Paintings</a></li>
-                <li><a href="#geschiedenis">history</a></li>
-                <li><a href="Giftshop.html">Giftshop</a></li>
-                <li><a href="#">Contact</a></li> 
-                <li><a href="index.html">NL</a></li> 
-            </ul>
-        </nav>
+        <div class="achtergrondfoto">
+            <p id="js--menu" class="menu">≡</p>
+            <nav class="navigatie" id="js--nav">
+                <div class="logo">
+                    <img src="Images/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="#Tickets">Tickets</a></li>
+                    <li><a href="#Foto">Photo's</a></li>
+                    <li><a href="#geschiedenis">History</a></li>
+                    <li><a href="#interactief">interactive</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">NL</a></li>
+                </ul>
+            </nav>
 
         <div class="fronttext">
             <h1>RIJKSMUSEUM</h1>
@@ -45,7 +46,7 @@
     </div>
     </header>
 
-    <div class="middelpagina">
+    <div class="middelpagina" id="Tickets">
         <h2>Our exhibitions</h2>
         <p>Browse through our unique exhibitions</p>
 
@@ -78,7 +79,7 @@
 
     <!------------GESCHIEDENIS--------------->
 
-    <div class="Geschiedenis">
+    <div class="Geschiedenis" id="geschiedenis">
         <div class="text-geschiedenis">
         <h2 id="geschiedenis">History</h2>
         <div class="text">
@@ -97,40 +98,101 @@
 
     <!------------FOTO-SLIDER--------------->
 
-<div class="foto-text">
+<div class="foto-text" id="Foto">
     <h2>Take a look at our pictures</h2>
 </div>
 
 
 <div class="container">
 
-    <img class="mySlides" src="Images/vooraanzicht.jpg" alt="deze grote tuin bevat mooie bezienswaardigheden">
+    <img class="mySlides" src="Images/rijkshal.jfif" alt="deze grote tuin bevat mooie bezienswaardigheden">
     <img class="mySlides" src="Images/tuin.jpg" alt="deze grote tuin bevat mooie bezienswaardigheden">
-    <img class="mySlides" src="Images/cuypers-boekenkast.jpg" alt="Onze grote boekenkast is open voor iedereen">
+    <img class="mySlides" src="Images/rijkslibrary.jpg" alt="Onze grote boekenkast is open voor iedereen">
     <img class="mySlides" src="Images/gallerij1.jpg" alt="deze grote tuin bevat mooie bezienswaardigheden">
     <img class="mySlides" src="Images/nachtwacht-zaal.jfif" alt="Onze bekende nachtwachtzaal">
+    <img class="mySlides" src="Images/rijksatrium.jpg" alt="Onze bekende nachtwachtzaal">
 
     
     <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
     <a class="next" onclick="plusDivs(+1)">&#10095;</a>
 </div>
 <br>
+<h2 class="interactive" id="interactief">Take a look at Our Interactive tour</h2>
+        <div id="container"></div>
+        <input type="text" id="myInput" value="Enter room number" autocomplete="on">
+        <input type="button" value="Enter" id="voerIn" onclick="getInput()">
+            <img id="myImage" src="Img/0.jpg" alt="foto sb">
+            <div id="myInteraction">
+                <div id="myTitle">Hier komt de titel</div>
+                <nav>
+                    <button id="knopNoord" onclick="goDirection('noord')">↥</button>
+                    <button id="knopWest" onclick="goDirection('west')">↤</button>
+                    <button id="knopOost" onclick="goDirection('oost')">↦</button>
+                    <button id="knopZuid" onclick="goDirection('zuid')">↧</button>
+                </nav>
+            </div>
+            <img src="Images/plattegrond.png" id="mapImage" alt="de plattegrond met de locaties van het rijksmuseum">
 
-<div class="route">
-    <h2>PLACEHOLDER</h2>
-    <p>this is where the interactive tour will go</p>
-</div>
+    </article>
 
-</article>
+    <section class="collections">
+        <h2 class="collectionsTitle">Reviews From Our Visitors</h2>
+        <ul class="collectionsList">
+            <li class="collectionsListItem">
+                <h2 class="reviewTitle">Prepare to do a lot of walking,</h2> 
+                <p class="collectionsListP">there are elevator areas , bathroom and lockers to put your stuff away. 
+                    Enjoy walking through history and the staff is friendly as well.
+                </p>
+                <p>
+
+                </p>
+            </li>
+            <li class="collectionsListItem">
+                <h2 class="reviewTitle">lenghty tours</h2>
+                <p class="collectionsListP">I was very glad after seeing the immense amount of objects and arts.
+                    I was also surprised about the lenght of the tours. It's a 
+                    recommendation for every tourist who is looking for beautiful sights 
+                </p>
+               
+            </li>
+            <li class="collectionsListItem">
+                <h2 class="reviewTitle">Very nice looking and huge building</h2>
+                <p class="collectionsListP">The museum is really huge, and is home to various
+                    big halls. There is also a nice gallery of honour with the most important
+                    arts. i recommend this museum to everyone interested
+                </p>
+            <li class="collectionsListItem">
+                <h2 class="reviewTitle">Amazing diversity In Arts</h2>
+                <p class="collectionsListP">The amount of different arts and rooms is breathtaking.
+                    The rooms range from wallrugs to libraries. The museum contains something for everyone.
+                </p>
+               
+              
+            </li>
+        </ul>
+    </section>
 
 
 
-<a class="top" href="#article">↥</a>
+    <a class="top" href="#article">↥</a>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <section>
+        <footer>
+            <p id="contact">Rijksmuseum Amsterdam<br>
+                mailbox 74888<br>
+                1070 DN Amsterdam<br>
+                E-mail: info@rijksmuseum.nl<br>
+                Telephone number: +31 0 20 6747 000<br>
 
-<footer>
-    <p></p>
-</footer>
+                adress <br>
+                Museumstraat 1 <br>
+                1071 XX Amsterdam</p>
+            <img src="Images/app2.png" alt="">
+            <img src="Images/facebook3.png" alt="">
+            <a href="https://github.com/BorDekker/EindOpdrachtMuseumOnline"><img class="github" src="Images/github.png" alt=""></a>
+        </footer>
+    </section>
+
 </body>
 </html>
